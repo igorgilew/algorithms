@@ -40,5 +40,15 @@ public class RecursionTest {
         Assert.assertEquals(0, Recursion.reqSum(list));
     }
 
+    @Test
+    public void size5ElemTest() {
+        list.push(5);
+        list.push(4);
+        list.push(3);
+        list.push(2);
+        list.push(1);
+        Assert.assertEquals(5, list.size());
+        Assert.assertEquals(5, Recursion.reqSize(list));
+    }
 
 }

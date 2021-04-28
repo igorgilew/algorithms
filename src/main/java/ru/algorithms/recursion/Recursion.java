@@ -17,4 +17,17 @@ public class Recursion {
         }
         return list.pop() + reqSum(list);
     }
+
+    /**
+     * Кол-во элементов списка
+     * @param list
+     * @return
+     */
+    public static int reqSize(Stack<Integer> list) {
+        if (list.size() == 0) {
+            return 0;
+        }
+        list.pop();
+        return 1 + reqSize(list);
+    }
 }
