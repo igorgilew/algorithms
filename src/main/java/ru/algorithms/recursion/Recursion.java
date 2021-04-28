@@ -30,4 +30,16 @@ public class Recursion {
         list.pop();
         return 1 + reqSize(list);
     }
+
+    public static int reqMax(Stack<Integer> list) {
+        if (list.size() == 0) {
+            return 0;
+        }
+        if (list.size() == 1) {
+            return list.pop();
+        }
+        int max = list.pop();
+        int second = reqMax(list);
+        return max > second ? max : second;
+    }
 }

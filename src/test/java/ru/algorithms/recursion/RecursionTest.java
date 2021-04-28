@@ -51,4 +51,14 @@ public class RecursionTest {
         Assert.assertEquals(5, Recursion.reqSize(list));
     }
 
+    @Test
+    public void max5Test() {
+        list.push(5);
+        list.push(3);
+        list.push(2);
+        list.push(6);
+        list.push(1);
+        Assert.assertEquals(6, Recursion.reqMax(list));
+    }
+
 }
